@@ -16,5 +16,4 @@ int main(void){
     else {
         cout<<"Neither profit nor gain";
     }
-
 }
