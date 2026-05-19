@@ -23,7 +23,6 @@ int main(void){
             cout<<i<<' ';
             count++;
         }
-
         i++;
     }
     return 0;
