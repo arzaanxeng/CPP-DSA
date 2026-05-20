@@ -61,13 +61,12 @@ int main(void){
         for (int j = 1; j <= q - i; j++) {
             cout << " ";
         }
-        // 2. Print hollow stars
         for (int k = 1; k <= (2 * i - 1); k++) {
             // ONLY print a star at the boundaries
             if (k == 1 || k == (2 * i - 1)) {
                 cout << "*";
             } else {
-                cout << " "; // Empty space inside the diamond
+                cout << " "; 
             }
         }
         cout << endl;
@@ -75,17 +74,14 @@ int main(void){
 
     // BOTTOM HALF (Inverted logic)
     for (int i = q - 1; i >= 1; i--) {
-        // 1. Print leading spaces
         for (int j = 1; j <= q - i; j++) {
             cout << " ";
         }
-        // 2. Print hollow stars
         for (int k = 1; k <= (2 * i - 1); k++) {
-            // ONLY print a star at the boundaries
             if (k == 1 || k == (2 * i - 1)) {
                 cout << "*";
             } else {
-                cout << " "; // Empty space inside the diamond
+                cout << " "; 
             }
         }
         cout << endl;
