@@ -55,16 +55,5 @@ int main(void){
     if(flag == true ) cout<<"The number "<<x<<" is in the array."<<endl;
     else cout<<"The number "<<x<<" is not in the array."<<endl;
 
-    int count = 0;
-    for(int i =0 ; i < 6 ; i++){
-        for(int j = 1 ; j<6 ; j++){
-            if(arr[i] == arr[j]){
-              count ++;
-            }
-        }
-        cout<<count<<"  "<<i;
-    }
-
-
  return 0;
 }
