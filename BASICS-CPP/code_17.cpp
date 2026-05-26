@@ -18,7 +18,16 @@ int main(void){
    cout<<"Enter the value of the second number :";
    cin>>b;
 
-   swap(&a , &b);            // The addresses of variables are being passed from here
+   swap(&a , &b);            // The addresses of variables are being passed from here ( pass by reference )
    cout<<"\nThe first number is now :"<<a<<endl;
    cout<<"The second number is now :"<<b<<endl;
 }
+
+/* -----> another way is :
+
+using the values directly and use the temp variable within the scope of main
+a = temp;
+a = b;
+b = temp;
+a ---> b and b ---> a
+*/
