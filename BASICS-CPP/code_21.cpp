@@ -21,9 +21,7 @@ int main(void){
              cout<<nci<<" ";
         }
     cout<<endl;
-    }
-    
-    
+    }   
     return 0;
 }
 
