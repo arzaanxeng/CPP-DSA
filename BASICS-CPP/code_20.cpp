@@ -6,7 +6,7 @@ using namespace std;
 
 
 /* # CODE 1
-int main(void){
+int main(){
     cout<<"\n======== FIBONACCI SEQUENCE ========\n\n";
     int n;
     cout<<"Enter the number of terms u would like to print :";
@@ -47,4 +47,5 @@ int main(void){
     for(int i = 0 ; i <= n ; i++){
         cout<<fibonacci(i)<<" ";
     }
+    return 0;
 }
