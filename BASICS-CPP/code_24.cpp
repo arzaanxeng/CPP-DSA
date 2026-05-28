@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 
+
+// code written by gemini 
+// Can't understand the unique_index 
+// I approached with double for loop iterating over whole array comparing one fixed element with rest of the elements .
+
 int main(void){
     int arr[] = {1, 2, 3, 4, 5, 7, 3, 2, 4, 2};
     int n = 10;
