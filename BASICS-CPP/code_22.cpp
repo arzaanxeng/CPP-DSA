@@ -13,8 +13,6 @@ void swap(int arr[] , int n){
      else cout<<"\nNot a Palindrome\n";
 }
 
-
-
 int main(void){
     while(true){
     int n ;
@@ -27,7 +25,7 @@ int main(void){
     }
     swap(arr , n);
     char choice;
-    cout<<"Would u like to use the program again?(y/n) :";
+    cout<<"\nWould u like to use the program again?(y/n) :";
     cin>>choice;
     if(choice == 'N' || choice == 'n' ){
         cout<<"Thanks for using the program!";
@@ -35,6 +33,5 @@ int main(void){
     }
     else continue;
 }
-
 return 0;
 }
