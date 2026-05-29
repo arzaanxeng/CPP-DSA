@@ -32,14 +32,11 @@ int main(void){
     cout << "Boundary Matrix:\n";
     for(int i = 0 ; i < n ; i++){
         for(int k = 0 ; k < m ; k++){
-            // Condition: Top row OR Bottom row OR Leftmost column OR Rightmost column
-            if(i == 0 || i == n - 1 || k == 0 || k == m - 1) {
-                cout << arr[i][k] << " ";
-            } else {
-                cout << "  "; // Two spaces to perfectly align with the empty center
-            }
+            if(i == 0 || i == n - 1 || k == 0 || k == m - 1) cout << arr[i][k] << " ";
+            else cout << "  "; // Two spaces to perfectly align with the empty center
+            
         }
-        cout << "\n"; // Moves to the next row naturally without creating extra gaps
+        cout << "\n"; 
     }
 
     return 0;
