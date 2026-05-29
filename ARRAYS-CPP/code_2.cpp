@@ -12,7 +12,7 @@ int main(void){
         cin>>arr[k];
     }
     int start = 0 , end = n-1;
-    while(start <= end ){
+    while(start < end ){
         swap(arr[start] , arr[end]);
         start++;
         end--;
