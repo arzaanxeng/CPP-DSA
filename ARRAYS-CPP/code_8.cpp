@@ -25,7 +25,6 @@ int main(void){
     cout<<endl;
 
     // Printing the elemnts of 2-D array in wave form
-
     for(int i = 0 ; i<n ; i++){
         for(int k = 0 ; k<m ; k++){
             if( i%2 == 0 )cout<<arr[i][k]<<" ";
