@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// 2nd approach to reverse the array
 
 void reverseArray(int arr[], int n){
     int temp[n];
