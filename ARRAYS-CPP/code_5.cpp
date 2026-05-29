@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int main(void){
+// MY APPROACH 
+
+// COMPLEXITY IS 0(N^2)
+/*int main(void){
     int arr1[] = {1, 2, 3, 4, 5, 6};
     int arr2[] = {2, 3, 4, 5, 6};
     
@@ -17,12 +20,25 @@ int main(void){
             }
         }
         
-        // CRITICAL FIX: Check the flag right here after the inner loop ends
         if (flag == false) {
             cout << "The missing element is: " << arr1[i] << endl;
-            break; // Since we found the missing one, we can stop scanning entirely
+            break; 
         }
     }
-    
     return 0;
+}*/
+
+int main(void){
+    int arr1[] = {1, 2, 3, 4, 5, 6};
+    int arr2[] = {2, 3, 4, 5, 6};
+
+// COMPLEXITY : O(N)
+
+int sum1 = 0;
+for(int i = 0; i < 6; i++) sum1 += arr1[i]; 
+
+int sum2 = 0;
+for(int j = 0; j < 5; j++) sum2 += arr2[j]; 
+
+int missing_element = sum1 - sum2; 
 }
