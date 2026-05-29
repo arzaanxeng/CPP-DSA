@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 // code written by gemini 
 // Can't understand the unique_index 
 // I approached with double for loop iterating over whole array comparing one fixed element with rest of the elements .
