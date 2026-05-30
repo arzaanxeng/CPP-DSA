@@ -7,8 +7,7 @@ int main(void){
     getline(cin , s);
     int n = s.size() , sum = 0;
     for(int i= 0  ; i < n ; i++){
-         sum += s[i] - 48;
+         sum += s[i] - 48; // USING THE CONCEPT OF ASCII VALUES TO TURN THE STRING INTO AN INTEGER
     }
-
     cout<<"\nThe sum of the digits in the number is : "<<sum;
 }
