@@ -5,3 +5,4 @@ BASICS-CPP/code_2
 *.dSYM/
 .DS_Store
 a.out
+temp
