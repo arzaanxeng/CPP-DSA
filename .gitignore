@@ -1,8 +1,8 @@
-*.dSYM
-First_code
-BASICS-CPP/code_2
-.vscode/
 *.dSYM/
 .DS_Store
 a.out
 temp
+BASICS-CPP/code_*[^.cpp]
+ARRAYS-CPP/code_*[^.cpp]
+INTERMEDIATE-CPP/code_*[^.cpp]
+ARRAYS-CPP/code1
