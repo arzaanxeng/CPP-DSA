@@ -9,7 +9,7 @@ int main(void){
     // If we are at the last character OR the next character is different
     if(i + 1 == n || s[i] != s[i+1]){
         cout << s[i] << count;
-        count = 1; // Reset for the next group
+        count = 1; 
     }
     else {
         count++;

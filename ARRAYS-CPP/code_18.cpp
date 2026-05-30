@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// INSERTION SORT
 void insertion_sort( int arr[] , int n){
     for(int i = 0 ; i<n ; i ++){
         int j = i;
@@ -30,5 +30,6 @@ int main(void){
         cout<<arr[k]<<" ";
     }
     cout<<"\n\n";
-
+    
+return 0;
 }

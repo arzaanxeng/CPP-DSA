@@ -2,3 +2,6 @@
 First_code
 BASICS-CPP/code_2
 .vscode/
+*.dSYM/
+.DS_Store
+a.out
