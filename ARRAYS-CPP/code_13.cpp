@@ -24,6 +24,7 @@ int maxCount = -1;
     }
   }
 
-  cout<<"The row with maximum number of one's are :"<<maxRowIndex<<" and it contains "<<maxCount<<" ones.";
-
+  cout<<"\nThe row with maximum number of one's are :"<<maxRowIndex<<" and it contains "<<maxCount<<" ones.\n";
+  return 0;
 }
+// After studing vectors it can be simplified further 
