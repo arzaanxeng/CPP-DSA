@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// SEARCH INSERT POSITION
+// SEARCH INSERT POSITION ---> STAR PROBLEM
 
 int search_insert_target(int arr[] , int n , int target){
 
@@ -19,8 +19,7 @@ int search_insert_target(int arr[] , int n , int target){
             l = m + 1;
         }
     }
-
-    return l ;
+    return l ; // *********************************
 }
 
 int main(void){
