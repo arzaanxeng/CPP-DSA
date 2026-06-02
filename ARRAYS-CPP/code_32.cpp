@@ -19,10 +19,9 @@ void max_value_index(int arr[] , int n){
 
 }
 
-
-
 int main(void){
     int arr[] = {1,2,4,6,8,10,16,12,11,7,4,1};
     int n = sizeof(arr) / sizeof(arr[0]);
+    // Time Complexity --> O(log2(N))
     max_value_index( arr , n);
 }
