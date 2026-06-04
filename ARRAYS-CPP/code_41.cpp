@@ -19,8 +19,6 @@ int main(void){
     int n1 = sizeof(arr1)/sizeof(arr1[0]);
     int arr2[] = {1,1,2,2,3,3,4,4,5,5,6,7,7,8,8,9};
     int n2 = sizeof(arr2)/sizeof(arr2[0]);
-
     search_elm( arr1 , n1 );
     search_elm( arr2  , n2);
-
 }
