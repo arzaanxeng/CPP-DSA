@@ -11,14 +11,16 @@ int main(void){
   cout<<"Enter the value of right index :";
   cin>>r;
    
-  cout<<"The subarrays are : \n\n";
+  int sum = 0;
   for(int i = l ; i <= r ; i++){
      for(int j = i ; j <= r ; j++){
         for( int k = i ; k <= j ; k++) {
-            cout<<arr[k]<<" ";
+            sum += arr[k];
      }
      cout<<endl;
   }
 }
+cout<<"The required sum of all sub-arrays is :"<<sum;
+
 return 0;
 }
