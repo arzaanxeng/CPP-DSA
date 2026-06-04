@@ -16,7 +16,7 @@ int main(void){
      for(int j = i ; j <= r ; j++){
         for( int k = i ; k <= j ; k++) {
             sum += arr[k];
-     }
+        }
      cout<<endl;
   }
 }
