@@ -23,4 +23,5 @@ int main(void){
     find_min(arr1,n1);
     find_min(arr2,n2);
     find_min(arr3,n3);
+
 }
