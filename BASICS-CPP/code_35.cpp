@@ -1,13 +1,17 @@
 // rotate an array by kth position
 #include<iostream>
-#include<climits>
 using namespace std;
 
 void rotate(int arr1[] , int n , int k){
+    k = k%n;
     int arr2[n];
     for(int i = 0 ; i < n ; i++){
-        if( i <= k-1) arr2[i] = arr1[n -k + i];
-        else if (arr2[i] = arr1[i-k]);
+        if( i <= k-1) {
+            arr2[i] = arr1[n -k + i];
+        }
+        else {
+            arr2[i] = arr1[i-k];
+        }
     }
     for(int i = 0 ; i < n ; i++){
         cout<<arr2[i]<<" ";
