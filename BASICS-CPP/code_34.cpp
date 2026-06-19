@@ -27,7 +27,6 @@ void Second_Largest_approach2(int arr[], int n ){
         else if (arr[i] > max2 && arr[i] < max1) max2 = arr[i];
     }
     cout<<max2<<endl;
-
 }
 
 int main(void){
