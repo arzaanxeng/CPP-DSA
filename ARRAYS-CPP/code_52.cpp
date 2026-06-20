@@ -12,16 +12,16 @@ int main(void){
     cin>>arr[i];
     }
  
-    for(int i = 0 ; i < n ; i++){
-        if(arr[i] == INT_MIN) continue;
-        int count = 1;
-        for(int j = (i+1) ; j<n ; j++){
-            if(arr[i] == arr[j]){
-            count++;
-            arr[j] = INT_MIN;
-            }
-        }
-    cout<<"The element "<<arr[i]<<" frequency is : "<<count<<endl;
+    map<int,int>m;
+    for(int i = 0; i<n ; i++){
+        if(m.find(arr[i]) != m.end()) m[arr[i]]++;
+        else m[arr[i]] = 1;
     }
+
+    for (const auto& p : m) {
+        cout << p.first << "  :  " << p.second << "\n";
+    }
+    return 0;
+
 }
 
