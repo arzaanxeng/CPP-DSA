@@ -4,15 +4,15 @@ using namespace std;
 
 void all_subarr_sum(vector<int>& v){
     int n = v.size();
-    // Carry Forward Technique
+    int ans = 0;
     for(int i = 0 ; i< n ; i++){
-        int sum = 0;
+        int sum = 0 ;
         for(int j = i ; j<n ; j++){
             sum += v[j];
-            cout<<sum<<" ";
+            ans = max(sum,ans);
         }
-        cout<<endl;
     }
+    cout<<"The maximum sum is : "<<ans;
 }
 
 
