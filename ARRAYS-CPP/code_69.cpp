@@ -1,5 +1,5 @@
 #include <iostream>
-#include<unordered_set>
+#include<unordered_map>
 #include <vector>
 using namespace std;
 
@@ -7,17 +7,17 @@ using namespace std;
 void find_distinct_element_count_all_windows(vector<int>& v, int k) {
     int n = v.size();
     vector<int>v_count;
-    unordered_set<int>s;
-    for(int i = 0 ; i<= n-k ; i++){
-       s.clear();
-       for(int j = i ; j < i+k ; j++){
-        s.insert(v[j]);
-       }
-        v_count.push_back(s.size());
+    unordered_map<int,int>m;
+    for(int i = 0 ; i < k ; i++){
+        m[v[i]]++;
     }
-    for(auto it = v_count.begin() ; it != v_count.end() ; it++){
-        cout<<*it<<" ";
-    }  
+    cout << m.size() << " ";
+    for(int i = k ; i < n ; i++){
+        m[v[i-k]]--;
+        if(m[v[i-k]] == 0) m.erase(v[i-k]);
+        m[v[i]]++;
+        cout << m.size() << " ";
+    }
 }
 
    
