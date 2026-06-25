@@ -25,35 +25,24 @@ void find_max_vowel_count(vector<char>& v, int k) {
     for (int i = k; i < n; i++) {
 
         // Add incoming character
-        if (isVowel(v[i])) {
-            count++;
-        }
-
+        if (isVowel(v[i]))  count++;
         // Remove outgoing character
-        if (isVowel(v[i - k])) {
-            count--;
-        }
-
+        if (isVowel(v[i - k]))  count--;
         ans = max(ans, count);
     }
-
     cout << "The maximum number of vowels in a subarray of size "
          << k << " is: " << ans;
 }
 
 int main() {
     int n, k;
-
     cout << "Enter the size of the array: ";
     cin >> n;
-
     vector<char> v(n);
-
     for (int i = 0; i < n; i++) {
         cout << "Enter element " << i + 1 << ": ";
         cin >> v[i];
     }
-
     cout << "Enter the size of the subarray: ";
     cin >> k;
 
@@ -61,8 +50,6 @@ int main() {
         cout << "Invalid subarray size.";
         return 0;
     }
-
     find_max_vowel_count(v, k);
-
     return 0;
 }
