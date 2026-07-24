@@ -7,12 +7,12 @@ using namespace std;
 void is_duplicate(vector<int> &v){
     unordered_set<int>s;
     for(int i : v){
-        if(s.find(v[i]) != s.end()){
+        if(s.find(i) != s.end()){
             cout<<"Yes , the array has duplicates!";
             return;
         }
         else{
-            s.insert(v[i]);
+            s.insert(i);
         }
     }
     cout<<"No , the array does not contain duplicates!";
