@@ -1,7 +1,7 @@
 // PAINTER PARTITION PROBLEM
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <climits>
 using namespace std;
 
 bool is_possible_to_paint(vector<int>& nums , int time_limit , int k){
@@ -21,7 +21,7 @@ bool is_possible_to_paint(vector<int>& nums , int time_limit , int k){
 
 void painters_placement( vector<int>& nums , int k){
     int n = nums.size();
-    int r , l = INT_MIN , ans = -1;
+    int r = 0 , l = INT_MIN , ans = -1;
     // Extracting the values of least and max amount of time a painter could have to paint the walls !
     for( int i = 0 ; i < n ; i++){
         r += nums[i];
@@ -54,9 +54,6 @@ int main(void) {
         cout << "Enter the time reqired to paint the wall number " << (i + 1) << " : ";
         cin >> nums[i];
     }
-    
-    // Binary search on answer REQUIRES sorted positions
-    sort(nums.begin(), nums.end());
 
     cout << "\nEnter the number of painters appointed : ";
     cin >> k;
@@ -67,3 +64,10 @@ int main(void) {
     painters_placement(nums, k);
     return 0;
 }
+
+/*
+Very Important thing to note down is that even though I am using binary search but I am not sorting the array . Well the reason 
+behind this is that i am not accessing the array to do binar search , i am actually doing a binary search on the gap of hours 
+which are being calculated using the l , r , m !
+It is actually called BINARY SEARCH ON ANSWER !
+*/
