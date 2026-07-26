@@ -5,7 +5,6 @@
     ||----w |
     ||     ||   AGGRESSIVE COWS 
 */
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
