@@ -1,5 +1,5 @@
 // SORT 0's and 1's
-// NUMBER OF SUBARRAYS WHOSE SUM IS EQUIVALENT TO REQUIRED SUM 
+
 #include <iostream>
 #include <vector>
 #include<algorithm>
