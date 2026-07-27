@@ -31,6 +31,6 @@ int main(void){
     cout << "\nEnter the required SUM : ";
     cin >> k;
     int ans = two_sum(nums,k);
-    cout<<"\n"<<ans;
+    cout<<"\nANSER IS :-> "<<ans;
     
 }
