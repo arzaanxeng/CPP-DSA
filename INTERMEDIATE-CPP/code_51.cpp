@@ -4,17 +4,13 @@ using namespace std;
 
 vector<int> findArray(const vector<int>& nums, int n, int target) {
     // 1. BASE CASE: Empty sub-array
-    if (n == 0) {
-        return {}; // Return empty vector
-    }
-
+    if (n == 0) return {}; 
+    
     // 2. RECURSIVE CALL: Get all indices from the first (n-1) elements
     vector<int> ans = findArray(nums, n - 1, target);
 
     // 3. WORK AT CURRENT LEVEL: Check the n-1 th element
-    if (nums[n - 1] == target) {
-        ans.push_back(n - 1);
-    }
+    if (nums[n - 1] == target) ans.push_back(n - 1);
 
     return ans;
 }
