@@ -1,5 +1,6 @@
 // Minimum element in the array
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
 
