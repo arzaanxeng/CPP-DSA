@@ -6,9 +6,9 @@
 using namespace std;
 
 
-int minArray( vector<int>& nums , int n){
+int maxArray( vector<int>& nums , int n){
     if( n == 0 ) return INT_MIN;
-    int smallAns = minArray( nums , n -1 );
+    int smallAns = maxArray( nums , n -1 );
     return max( smallAns , nums[n-1]);
 }
 
@@ -21,7 +21,7 @@ int main(void){
         cout<<"Enter the value of "<<(i+1)<<" element : ";
         cin>>v[i];
     }
-    int ans = minArray(v , n );
+    int ans = maxArray(v , n );
     cout<<"\nThe minimum element in the array is : " << ans;
     return 0;
 }
