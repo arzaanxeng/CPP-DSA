@@ -5,7 +5,6 @@
 #include <vector>
 using namespace std;
 
-
 int sumArray( vector<int>& nums , int n){
     if( n== 0) return 0;
     return sumArray( nums , n-1) + nums[n-1]; 
