@@ -20,7 +20,7 @@ void towerOfHanoi(int n, char source, char aux, char dest) {
 }
 
 int main() {
-    int n = 20 ; // Number of disks
+    int n = 5 ; // Number of disks
     towerOfHanoi(n, 'A', 'B', 'C'); // A: Source, B: Auxiliary, C: Destination
     return 0;
 }
