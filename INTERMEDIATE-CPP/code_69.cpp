@@ -24,7 +24,7 @@ Index 1 is the smallest index such that arr[1] >= x.
 #include<vector>
 using namespace std;
 
-int upperBound( vector<int>nums , int x ){
+int upperBound( vector<int>& nums , int x ){
     int l = 0 , r = nums.size() ;
     int ans = -1;
     while( l <= r ){
@@ -39,7 +39,7 @@ int upperBound( vector<int>nums , int x ){
     return ans ;
 }
 
-int lowerBound( vector<int>nums , int x ){
+int lowerBound( vector<int>& nums , int x ){
     int l = 0 , r = nums.size() ;
     int ans = -1;
     while( l <= r ){
