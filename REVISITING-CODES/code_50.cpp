@@ -24,7 +24,7 @@ int lowerBound(vector<int>& nums , int target){
 }
 
 int main(void){
-    vector<int>v= {3,5,8,15,19,23,27,29,31,34,47,49,51};
+    vector<int>v= {3,5,8,15,19,23,47,49,51};
     int target = 30;
     int ans = lowerBound(v,target);
     if(ans==-1) cout<<"The element >= "<<target<<" does not exist in the array !";
