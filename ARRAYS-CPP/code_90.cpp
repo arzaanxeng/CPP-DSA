@@ -15,6 +15,7 @@ In no manner can we increase the minimum distance beyond 3.
 */
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 bool isPossible( vector<int>&stalls , int k , int m ){
