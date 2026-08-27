@@ -1,4 +1,4 @@
-// Setting the Bit
+// UnSetting the Bit
 
 #include <iostream>
 #include <vector>
