@@ -5,7 +5,7 @@
 #include <algorithm>
 using namespace std;
 
-long long checkBitSetUnset(long long n , int k ){
+long long settingBit(long long n , int k ){
     int mask = 1 << k;
     n = n | mask;
     return n;
@@ -20,7 +20,7 @@ int main(void){
     cout<<"\nWhich bit whould You like to set : ";
     cin>>k;
 
-    long long ans = checkBitSetUnset(n,k);
+    long long ans = settingBit(n,k);
     cout<<"The " <<k<<"th bit was set and the number now is : "<<ans;
     return 0;
 }
