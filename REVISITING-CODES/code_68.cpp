@@ -14,7 +14,8 @@ int main(void){
     int n;
     cout<<"Enter a number : ";
     cin>>n;
-    f(n);
+    if( n == 0 ) cout<<"0";
+    else f(n);
     return 0;
 }
 
