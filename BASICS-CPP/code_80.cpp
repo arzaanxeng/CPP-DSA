@@ -1,4 +1,4 @@
-// Last Occurence of the target Element Index
+// Finding all the indices of the Target Value
 
 #include <iostream>
 #include <vector>
