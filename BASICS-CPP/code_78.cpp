@@ -1,4 +1,4 @@
-// Min and Max in thhe array
+// First Occurence of the target Element Index
 
 #include <iostream>
 using namespace std;
