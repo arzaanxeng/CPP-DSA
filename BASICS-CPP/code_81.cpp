@@ -5,7 +5,7 @@
 using namespace std;
 
 bool isSorted(const int nums[], int n){
-    if( n == 0 ) return true;
+    if( n == 1 ) return true;
     bool smallAns = isSorted(nums,n-1);
     if( smallAns == false ) return false;
     return nums[n-1] >= nums[n-2];
