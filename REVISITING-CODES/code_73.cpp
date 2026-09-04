@@ -1,7 +1,7 @@
+// Seatch In a Rotated Sorted Array
 #include<iostream>
 #include<string>
 using namespace std;
-// Seatch In a Rotated Sorted Array
 
 class Solution {
 public:
