@@ -1,9 +1,11 @@
 // Maximum Number of Consecutive Ones
+
 #include<iostream>
+
 using namespace std;
 
 int main(void){
-    vector<int>nums = {1,0,0,1,1,1,0,0,1,0,1,0,1,1,1,1,1,0,1,1};
+    vector<int>nums = {1,1,1,0,0,1,0,1,0,1,1,1,1,1,0,1,1};
     int count = 0 , ans = 0;
     for( int num : nums ){
         if(num==1){
@@ -12,6 +14,6 @@ int main(void){
         }
         else count = 0;
     }
-    cout<<"The maximum number of consective ones are : "<<ans;
+    cout<<"The maximum number of consective ones in the array are : "<<ans;
     return 0;
 }
