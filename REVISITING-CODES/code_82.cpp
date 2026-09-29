@@ -17,4 +17,5 @@ int main(void){
         ans = max(ans , r-l+1);
     }
     cout<<"The max length of subArray is : "<<ans;
+    return 0;
 }
