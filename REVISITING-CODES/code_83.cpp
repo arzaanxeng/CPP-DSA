@@ -17,4 +17,6 @@ int main(void){
         }
     }
     cout<<"The minimum length of Subarray with Sum > "<<x<<" : "<<ans;
+    return 0;
+    
 }
