@@ -2,7 +2,6 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
 // ZigZag
 void zigzag( int n ){
     if( n == 0) return ;
@@ -10,8 +9,7 @@ void zigzag( int n ){
     zigzag(n-1);
     if(n!=1)cout<<n<<endl;
 }
-
-
 int main(void){
     zigzag(10);
+    return 0;
 }
