@@ -75,6 +75,6 @@ int main() {
     vector<vector<char>> grid(n, vector<char>(n, '.'));
 
     f(0, grid, n);
-
+    
     return 0;
 }
