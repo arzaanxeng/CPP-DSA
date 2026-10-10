@@ -1,4 +1,4 @@
-// Subsequences with SUM + K
+// Subsequences with SUM = K
 #include<iostream>
 #include<vector>
 #include<map>
