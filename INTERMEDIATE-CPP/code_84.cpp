@@ -10,7 +10,7 @@ int Merge( vector<int>& nums , int l , int r ){
     vector<int>ans;
     int ans3 = 0;
     while (i <= mid && j <= r) {
-        if (nums[i] > nums[j]) { 
+        if (nums[i] > nums[j]) {  // { (nums[i] > nums[j]) && (j > i) }
             ans3 += mid-i+1;
             ans.push_back(nums[j]);
             j++;
