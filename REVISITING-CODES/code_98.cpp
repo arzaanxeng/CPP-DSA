@@ -1,4 +1,5 @@
 // Search in a rotated array 
+
 #include <iostream>
 #include <vector>
 
@@ -27,12 +28,15 @@ int searchRotatedArray(const std::vector<int>& nums, int target) {
             }
         }
     }
+
     return -1; // Target not found
 }
 
 int main() {
     std::vector<int> nums = {4, 5, 6, 7, 0, 1, 2};
-    int target = 0;
+
+    int target = 6;
+
     std::cout << "Index of target: " << searchRotatedArray(nums, target) << "\n"; // Output: 4
     return 0;
 }
