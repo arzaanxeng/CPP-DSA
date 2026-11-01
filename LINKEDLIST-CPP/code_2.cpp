@@ -8,6 +8,7 @@ public:
     int data;
     Node* next;
 
+    // Constructor
     Node(int val){
         data = val;
         next = NULL;
@@ -15,6 +16,7 @@ public:
 };
 
 int main(void){
+    // Storing the address of each node
     Node* head = new Node(10);
     Node* second = new Node(20);
     Node* third = new Node(40);
@@ -22,11 +24,12 @@ int main(void){
     head->next = second;    // Store the address of Node B inside the next pointer of Node A.
     second->next = third;   // Store the address of Node C inside the next pointer of Node B.
 
-    Node* temp = head; // Preserves the Actual HEAD pointer
+    Node* temp = head;      // Preserves the Actual HEAD pointer
 
     while( temp != NULL){
         cout << temp->data << " -> ";
         temp = temp->next;
+        // Loop will terminate when head -> NULL
     }
     cout<<"NULL";
     return 0;
