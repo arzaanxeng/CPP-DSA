@@ -31,7 +31,7 @@ void insertAtTail(Node*& head, int val){
 }
 
 // Find minimum element in the LL
-int CountX(Node* &head ){
+int MinElement(Node* &head ){
     Node* ptr = head;
     int min = INT_MAX;
     while( ptr != NULL){
@@ -53,7 +53,7 @@ int main(void){
     insertAtTail(head, 80);
 
     
-    int ans = CountX(head);
+    int ans = MinElement(head);
     cout<<"The smallest element in the Linked List is : "<<ans;
     // Free the list (every new needs a delete)
     while(head != NULL){
