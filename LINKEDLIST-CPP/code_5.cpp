@@ -32,6 +32,8 @@ void insertAtTail(Node*& head, int val){
 
 // Find minimum element in the LL
 int MinElement(Node* &head ){
+    if(head == NULL) return -1; // Edge Case
+
     Node* ptr = head;
     int min = INT_MAX;
     while( ptr != NULL){
