@@ -1,4 +1,4 @@
-// Finding Length of a Linked List
+// Finding Minimum Element in a Linked List
 
 #include<iostream>
 using namespace std;
